@@ -1,5 +1,5 @@
 <script>
-    import { Media } from "sveltestrap";
+    import Media from "../../node_modules/sveltestrap/src/Media.svelte";
 </script>
 
 <Media>

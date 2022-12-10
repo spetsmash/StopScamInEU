@@ -1,10 +1,11 @@
 <script>
-    import { Col, Row } from "sveltestrap";
+    import Row from "../../node_modules/sveltestrap/src/Row.svelte";
+    import Col from "../../node_modules/sveltestrap/src/Col.svelte";
 
     let _tahun = new Date().getFullYear();
 </script>
 
-<footer class="bg-primary text-white text-lg-start">
+<footer class="navbar_bg text-white text-lg-start">
     <!-- Grid container -->
     <div class="container-fluid py-5">
         <!--Grid row-->
