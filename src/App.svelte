@@ -125,7 +125,7 @@
         height: 350px;
     }
     .main-wrapper {
-        margin-top: 11rem!important;
+        margin-top: 20vh!important;
         padding: 0 20px !important;
     }
 </style>

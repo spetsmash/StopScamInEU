@@ -20,7 +20,7 @@
             <div class="qr">
                 <img
                         class="donate_img"
-                        src="../../img/qr.png"
+                        src="../../img/qr.jpeg"
                         alt="Donate" />
             </div>
         </CardText>

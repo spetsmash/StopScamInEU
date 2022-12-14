@@ -98,7 +98,7 @@ button:focus {
 }
 
 .logo_img {
-    width: 130px;
+    width: 15vh;
 }
 .navbar_bg {
     background-color: #111173 !important
@@ -130,4 +130,13 @@ button:focus {
 
 .green {
     color: green;
+}
+
+.fixed-top {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    height: 17vh;
 }
