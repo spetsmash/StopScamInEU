@@ -7,10 +7,10 @@
 
 <footer class="navbar_bg text-white text-lg-start">
     <!-- Grid container -->
-    <div class="container-fluid py-5">
-        <!--Grid row-->
+<!--    <div class="container-fluid py-5">
+        &lt;!&ndash;Grid row&ndash;&gt;
         <Row>
-            <!--Grid column-->
+            &lt;!&ndash;Grid column&ndash;&gt;
             <Col xl="6" xs="12">
                 <h5 class="text-uppercase">Footer Content</h5>
 
@@ -21,9 +21,9 @@
                     est atque cumque eum delectus sint!
                 </p>
             </Col>
-            <!--Grid column-->
+            &lt;!&ndash;Grid column&ndash;&gt;
 
-            <!--Grid column-->
+            &lt;!&ndash;Grid column&ndash;&gt;
             <Col xl="3" xs="6">
                 <h5 class="text-uppercase">Links</h5>
 
@@ -42,9 +42,9 @@
                     </li>
                 </ul>
             </Col>
-            <!--Grid column-->
+            &lt;!&ndash;Grid column&ndash;&gt;
 
-            <!--Grid column-->
+            &lt;!&ndash;Grid column&ndash;&gt;
             <Col xl="3" xs="6">
                 <h5 class="text-uppercase">Links</h5>
 
@@ -63,16 +63,15 @@
                     </li>
                 </ul>
             </Col>
-            <!--Grid column-->
+            &lt;!&ndash;Grid column&ndash;&gt;
         </Row>
-        <!--Grid row-->
-    </div>
+        &lt;!&ndash;Grid row&ndash;&gt;
+    </div>-->
     <!-- Grid container -->
 
     <!-- Copyright -->
     <div class="text-center p-3 footerStyle">
-        © {_tahun} Latihan:
-        <a class="text-white" href="https://svelte.dev/">Svelte.dev</a>
+        <a class="text-white" href="https://svelte.dev/">2017</a>
     </div>
     <!-- Copyright -->
 </footer>

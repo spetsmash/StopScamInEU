@@ -51,6 +51,21 @@
         request.send();
     });
 
+    const chatInfo = `https://api.telegram.org/bot${telegramToken}/getChat?chat_id=${chatId}`;
+    let numberOfComplains
+
+    fetch(chatInfo)
+            .then(function(response) {
+                return response.json();
+            })
+            .then(function(jsonResponse) {
+                // do something with jsonResponse
+                console.log(jsonResponse);
+                return jsonResponse.result.description;
+            });
+
+    //const numOfComplains = chatInfo.description;
+
   /*  text('https://www.cloudflare.com/cdn-cgi/trace').then(data => {
         let ipRegex = /[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}.[0-9]{1,3}/
         let clientIp = data.match(ipRegex)[0];
@@ -82,7 +97,7 @@
                 <CardMainText></CardMainText>
             </Col>
             <Col xs="12" md="6" s="6" lg="3">
-                <CardSiteStatistics></CardSiteStatistics>
+                <CardSiteStatistics numberOfComplains="numberOfComplains"></CardSiteStatistics>
             </Col>
             <Col xs="12" md="" s="6" lg="6">
                 <CardDonate></CardDonate>

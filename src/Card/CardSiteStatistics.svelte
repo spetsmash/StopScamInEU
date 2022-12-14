@@ -1,4 +1,5 @@
 <script>
+    import {onMount} from "svelte"
     import Card from "../../node_modules/sveltestrap/src/Card.svelte";
     import CardBody from "../../node_modules/sveltestrap/src/CardBody.svelte";
     import CardText from "../../node_modules/sveltestrap/src/CardText.svelte";
@@ -9,7 +10,7 @@
     import { onDestroy } from 'svelte';
     import { t } from "../i18n";
     import { initializeApp } from "firebase/app";
-    import { getFirestore } from "firebase/firestore";
+
 
     var fileReader = new FileReader();
     fileReader.onload = function() {
@@ -40,9 +41,36 @@
         measurementId: "G-JJD4DNV97Z"
     };
 
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const analytics = getAnalytics(app);
+        let telegramToken = "5875623123:AAHsMDvFyrAspvOPOt9-HKyffAFdCcg85j8";
+        let chatId = "@StopScamInUa";
+        const chatInfo = `https://api.telegram.org/bot${telegramToken}/getChat?chat_id=${chatId}`;
+/*        fetch(chatInfo)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(jsonResponse) {
+                    // do something with jsonResponse
+                    console.log(jsonResponse.result.description);
+                    x = jsonResponse.result.description;
+                    return jsonResponse.result.description;
+                });
+
+
+    }*/
+    let x;
+    onMount(async ()=> {
+
+        fetch(chatInfo)
+                .then(function(response) {
+                    return response.json();
+                })
+                .then(function(jsonResponse) {
+                    // do something with jsonResponse
+                    console.log(jsonResponse.result.description);
+                    x = jsonResponse.result.description;
+                    return jsonResponse.result.description;
+                });
+    });
 </script>
 
 <Card class="mb-5">
@@ -52,7 +80,7 @@
         </CardHeader>
         <CardText class="card_padding">
             <p>{$t("statistics.searches")}: {countInitialSearches}</p>
-            <p>{$t("statistics.complains")}: 3509</p>
+            <p>{$t("statistics.complains")}: {x}</p>
         </CardText>
     </CardBody>
 </Card>
