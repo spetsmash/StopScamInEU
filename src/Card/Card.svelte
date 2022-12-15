@@ -53,10 +53,12 @@
         visible = false;
     };
 
+    let isBaoScammer = false;
+
     let includesCompany = (companyName) => {
-        if(includes(companyName, "mkbau")
+        if((includes(companyName, "mkbau")
                 || includes(companyName, "mk bau")
-                || includes(companyName, "nordbau maranndi ")) {
+                || includes(companyName, "nordbau maranndi ")) && isBaoScammer) {
             modalText = $t("modal.text.business");
             return true;
         }
@@ -70,7 +72,7 @@
     };
 
     let includesTaxPayer = (taxPayer) => {
-        if(includes(taxPayer, "209206852")) {
+        if(includes(taxPayer, "209206852") && isBaoScammer) {
             modalText = $t("modal.text.business");
             return true;
         }
