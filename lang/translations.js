@@ -46,7 +46,7 @@ export default {
     "statistics.title": "Статистика сайта",
     "statistics.searches": "Поисков сегодня",
     "statistics.complains": "Количество жалоб",
-    "donate.title": "Благотворительность",
+    "donate.title": "Помощь сайту",
     "donate.crypto": "Криптовалюты",
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Внимание",
