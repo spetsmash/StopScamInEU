@@ -27,7 +27,7 @@
         <CardText class="card_padding">
             {$t("main.text")}
         </CardText>
-        <a href="mailto:abc@example.com"><Button class="btn btn-primary button_scammer btn_blue">{$t("main.button")}</Button></a>
+        <a href="mailto:stop.scam.in.eu@gmail.com"><Button class="btn btn-primary button_scammer btn_blue">{$t("main.button")}</Button></a>
     </CardBody>
 </Card>
 <Modal isOpen={open} {toggle}>

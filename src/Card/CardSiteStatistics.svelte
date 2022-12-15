@@ -57,7 +57,7 @@
 
 
     }*/
-    let x;
+    let complains;
     onMount(async ()=> {
 
         fetch(chatInfo)
@@ -67,7 +67,7 @@
                 .then(function(jsonResponse) {
                     // do something with jsonResponse
                     console.log(jsonResponse.result.description);
-                    x = jsonResponse.result.description;
+                    complains = jsonResponse.result.description;
                     return jsonResponse.result.description;
                 });
     });
@@ -80,7 +80,7 @@
         </CardHeader>
         <CardText class="card_padding">
             <p>{$t("statistics.searches")}: {countInitialSearches}</p>
-            <p>{$t("statistics.complains")}: {x}</p>
+            <p>{$t("statistics.complains")}: {complains ?? 0}</p>
         </CardText>
     </CardBody>
 </Card>
