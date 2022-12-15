@@ -20,6 +20,7 @@
 </script>
 
 <Navbar dark expand="md" class="fixed-top navbar_bg">
+    <div class="flex-top">
     <NavbarBrand href="/" class="text-uppercase">
                 <img
                         class="logo_img"
@@ -38,6 +39,7 @@
             </select>
         </p>
     </div>
+        </div>
 <!--    <NavbarToggler on:click={() => (isOpen = !isOpen)} />-->
 <!--    <Collapse {isOpen} navbar expand="md" on:update={handleUpdate}>-->
 <!--        <Nav class="ml-auto mr-5 py-2" navbar>-->

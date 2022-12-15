@@ -140,3 +140,19 @@ button:focus {
     z-index: 1030;
     height: 17vh;
 }
+
+.flex-top {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/* Viewports between 320px and 480px wide */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .title-text {
+        font-size: 4vh;
+    }
+}
+
