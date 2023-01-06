@@ -17,7 +17,10 @@
     import ModalHeader from "../../node_modules/sveltestrap/src/ModalHeader.svelte";
     import ModalBody from "../../node_modules/sveltestrap/src/ModalBody.svelte";
     import ModalFooter from "../../node_modules/sveltestrap/src/ModalFooter.svelte";
-
+    import { companiesTaxNumbersCheatPartners } from "../../blackList/companiesTaxNumbersCheatPartners"
+    import { companiesTaxNumbersCheatEmployees } from "../../blackList/companiesTaxNumbersCheatEmployees"
+    import { conpaniesNamesCheatEmployees } from "../../blackList/conpaniesNamesCheatEmployees"
+    import { conpaniesNamesCheatPartners } from "../../blackList/conpaniesNamesCheatPartners"
     let hasError = false;
 
     let myModal = document.getElementById("myModal");
@@ -53,16 +56,12 @@
         visible = false;
     };
 
-    let isBaoScammer = false;
-
     let includesCompany = (companyName) => {
-        if((includes(companyName, "mkbau")
-                || includes(companyName, "mk bau")
-                || includes(companyName, "nordbau maranndi ")) && isBaoScammer) {
+        if(includes(companiesTaxNumbersCheatPartners, companyName)) {
             modalText = $t("modal.text.business");
             return true;
         }
-        if(includes(companyName, "cusnir")) {
+        if(includes(companiesTaxNumbersCheatEmployees,companyName)) {
             modalText = $t("modal.text.employees");
             return true;
         }
@@ -72,11 +71,11 @@
     };
 
     let includesTaxPayer = (taxPayer) => {
-        if(includes(taxPayer, "209206852") && isBaoScammer) {
+        if(includes(conpaniesNamesCheatPartners, taxPayer)) {
             modalText = $t("modal.text.business");
             return true;
         }
-        if(includes(taxPayer, "8971881415")) {
+        if(includes(conpaniesNamesCheatEmployees, taxPayer)) {
             modalText = $t("modal.text.employees");
             return true;
         }
