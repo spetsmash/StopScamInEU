@@ -26,8 +26,8 @@ export default {
     "donate.crypto": "Cryptocurrencies",
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Attention",
-    "modal.text.employees": "The company does not pay employees",
-    "modal.text.business": "The company is cheating business partners!",
+    "modal.text.employees": "The company {{name}} with Tax Number {{taxNumber}} does not pay employees",
+    "modal.text.business": "The company {{name}} with Tax Number {{taxNumber}} is cheating business partners!",
     "modal.text.not_found": "No complains have been received about this company"
   },
   ru: {
@@ -50,8 +50,8 @@ export default {
     "donate.crypto": "Криптовалюты",
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Внимание",
-    "modal.text.employees": "Компания не платит работникам!",
-    "modal.text.business": "Компания обманывает бизнесс партнеров!",
+    "modal.text.employees": "Компания {{name}} с номером налогоплательщика {{taxNumber}} не платит работникам!",
+    "modal.text.business": "Компания {{name}} с номером налогоплательщика {{taxNumber}}  обманывает бизнесс партнеров!",
     "modal.text.not_found": "Никаких жалоб на компанию не поступало!"
   },
   de: {
