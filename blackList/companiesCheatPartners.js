@@ -1,8 +1,13 @@
 export const companiesCheatPartners = [
     {
-        title: "Title Mkbau",
-        search: ["mkbau", "nordbau maranndi", "mk bau"],
+        title: "Mk Bau",
+        search: ["mk bau", "mkbau", "MK Bau"],
         taxNumber: "209206852"
+    },
+    {
+        title: "Nordbau Marandi",
+        search: ["Nordbau Marandi", "Nordbau"],
+        taxNumber: ""
     }
 ];
 

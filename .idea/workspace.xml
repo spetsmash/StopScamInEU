@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a5ad377-b8a7-4ef0-938c-494467cc9833" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;blackList/companiesTaxNumbersCheatPartners.js">
-      <change afterPath="$PROJECT_DIR$/blackList/companiesCheatEmployees.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackList/companiesCheatPartners.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackList/companiesTaxNumbersCheatEmployees.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackList/companiesTaxNumbersCheatPartners.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackList/conpaniesNamesCheatEmployees.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackList/conpaniesNamesCheatPartners.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lang/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/lang/translations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Card/Card.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card/Card.svelte" afterDir="false" />
+    <list default="true" id="8a5ad377-b8a7-4ef0-938c-494467cc9833" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/blackList/companiesCheatPartners.js" beforeDir="false" afterPath="$PROJECT_DIR$/blackList/companiesCheatPartners.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673608883107</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;blackList/companiesTaxNumbersCheatPartners.js">
+      <created>1676486079959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676486079959</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -201,13 +201,14 @@
     <MESSAGE value="title changed" />
     <MESSAGE value="translations are added" />
     <MESSAGE value="translations UA are added" />
-    <option name="LAST_COMMIT_MESSAGE" value="translations UA are added" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;blackList/companiesTaxNumbersCheatPartners.js" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;blackList/companiesTaxNumbersCheatPartners.js" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="21" key="CommitChangelistDialog2" timestamp="1673608880696">
+    <state x="425" y="0" key="CommitChangelistDialog2" timestamp="1676486079195">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="21" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1673608880696" />
+    <state x="425" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1676486079195" />
     <state width="1578" height="216" key="GridCell.Tab.0.bottom" timestamp="1672777247464">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -224,9 +225,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1578" height="216" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1672777247464" />
-    <state x="392" y="150" key="Vcs.Push.Dialog.v2" timestamp="1673608890116">
+    <state x="392" y="150" key="Vcs.Push.Dialog.v2" timestamp="1676486084092">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="150" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1673608890116" />
+    <state x="392" y="150" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1676486084092" />
   </component>
 </project>
