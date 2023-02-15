@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a5ad377-b8a7-4ef0-938c-494467cc9833" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackList/companiesTaxNumbersCheatPartners.js" beforeDir="false" afterPath="$PROJECT_DIR$/blackList/companiesTaxNumbersCheatPartners.js" afterDir="false" />
+    <list default="true" id="8a5ad377-b8a7-4ef0-938c-494467cc9833" name="Default Changelist" comment="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;blackList/companiesTaxNumbersCheatPartners.js">
+      <change afterPath="$PROJECT_DIR$/blackList/companiesCheatEmployees.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blackList/companiesCheatPartners.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackList/companiesTaxNumbersCheatEmployees.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackList/companiesTaxNumbersCheatPartners.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackList/conpaniesNamesCheatEmployees.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackList/conpaniesNamesCheatPartners.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lang/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/lang/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Card/Card.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/Card/Card.svelte" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

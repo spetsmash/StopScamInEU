@@ -17,10 +17,9 @@
     import ModalHeader from "../../node_modules/sveltestrap/src/ModalHeader.svelte";
     import ModalBody from "../../node_modules/sveltestrap/src/ModalBody.svelte";
     import ModalFooter from "../../node_modules/sveltestrap/src/ModalFooter.svelte";
-    import { companiesTaxNumbersCheatPartners } from "../../blackList/companiesTaxNumbersCheatPartners"
-    import { companiesTaxNumbersCheatEmployees } from "../../blackList/companiesTaxNumbersCheatEmployees"
-    import { conpaniesNamesCheatEmployees } from "../../blackList/conpaniesNamesCheatEmployees"
-    import { conpaniesNamesCheatPartners } from "../../blackList/conpaniesNamesCheatPartners"
+    import { companiesCheatEmployees } from "../../blackList/companiesCheatEmployees"
+    import { companiesCheatPartners } from "../../blackList/companiesCheatPartners"
+
     let hasError = false;
 
     let myModal = document.getElementById("myModal");
@@ -29,6 +28,22 @@
 
     let modalText = "";
 
+    //****** form the data for search  ****
+    let companiesTaxNumbersCheatPartners = [];
+    let companiesTaxNumbersCheatEmployees = [];
+    let companiesNamesCheatEmployees = [];
+    let companiesNamesCheatPartners = [];
+    var dataArray = [];
+
+    for (let i = 0; i < companiesCheatPartners.length; i++) {
+        companiesTaxNumbersCheatPartners.push(companiesCheatPartners[i].taxNumber);
+        companiesNamesCheatPartners.push(companiesCheatPartners[i].search);
+    }
+    for (let i = 0; i < companiesCheatEmployees.length; i++) {
+        companiesTaxNumbersCheatEmployees.push(companiesCheatEmployees[i].taxNumber);
+        companiesNamesCheatEmployees.push(companiesCheatEmployees[i].search);
+    }
+    //****
     function handleSubmit(e) {
 
         let companyName = e.target[0].value;
@@ -38,17 +53,28 @@
             visible = true;
             return;
         }
-        if (!!companyName && includesCompany(companyName.toLowerCase())) {
-            danger = true;
-            toggle();
-            return;
-        }
-        if (!!taxPayerNumber && includesTaxPayer(taxPayerNumber)){
+        if (!!companyName) {
+            let index = searchInMultiDim(companiesNamesCheatEmployees, companyName);
+            if(index >= 0) {
+                modalText = $t("modal.text.employees", { name: companiesCheatEmployees[index].title, taxNumber: companiesCheatEmployees[index].taxNumber });
+                danger = true;
+                toggle();
+                return;
+            }
+            let index1 =  searchInMultiDim(companiesNamesCheatPartners, companyName);
+            if(index1 >= 0) {
+                modalText = $t("modal.text.business", { name: companiesCheatPartners[index1].title, taxNumber: companiesCheatPartners[index1].taxNumber});
+                danger = true;
+                toggle();
+                return;
+            }
+        } else if (!!taxPayerNumber && includesTaxPayer(taxPayerNumber)){
             danger = true;
             toggle();
             return;
         }
         danger = false;
+        modalText = $t("modal.text.not_found");
         toggle();
     }
 
@@ -56,7 +82,7 @@
         visible = false;
     };
 
-    let includesCompany = (companyName) => {
+/*    let includesCompany = (companyName) => {
         if(includes(companiesTaxNumbersCheatPartners, companyName)) {
             modalText = $t("modal.text.business");
             return true;
@@ -68,20 +94,33 @@
         modalText = $t("modal.text.not_found");
             return false
 
-    };
-
+    };*/
+//
     let includesTaxPayer = (taxPayer) => {
-        if(includes(conpaniesNamesCheatPartners, taxPayer)) {
-            modalText = $t("modal.text.business");
+        let indexPartners =  companiesTaxNumbersCheatPartners.indexOf(taxPayer);
+        let indexEmployees = companiesTaxNumbersCheatEmployees.indexOf(taxPayer);
+        console.log(indexPartners);
+        console.log(indexEmployees);
+        if(indexPartners >= 0) {
+            console.log('indexPartners');
+            modalText = $t("modal.text.business",
+                    { name: companiesCheatPartners[indexPartners].title, taxNumber: companiesCheatPartners[indexPartners].taxNumber});
             return true;
         }
-        if(includes(conpaniesNamesCheatEmployees, taxPayer)) {
-            modalText = $t("modal.text.employees");
+
+        else if(indexEmployees >= 0) {
+            console.log('indexEmployees');
+            modalText = $t("modal.text.employees",
+                    { name: companiesCheatEmployees[indexEmployees].title, taxNumber: companiesCheatEmployees[indexEmployees].taxNumber});
             return true;
         }
         modalText = $t("modal.text.not_found");
         return false
     };
+
+    function searchInMultiDim(arr, str) {
+        return arr.findIndex(t => { return t.find(i => i === str)});
+    }
 
     let open = false;
     const toggle = () => (open = !open);
