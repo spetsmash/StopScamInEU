@@ -73,8 +73,8 @@ export default {
     "donate.crypto": "Cryptocurrencies",
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Achtung",
-    "modal.text.employees": "Dieses Unternehmen zahlt seinen Arbeitnehmern nicht!",
-    "modal.text.business": "Dieses Unternehmen hat seine Geschäftspartner betrogen!",
+    "modal.text.employees": "Das Unternehmen {{name}} mit der Steuernummer {{taxNumber}} bezahlt den Mitarbeitern nicht!",
+    "modal.text.business": "Das Unternehmen {{name}} mit der Steuernummer {{taxNumber}} betrügt seine Geschäftspartnern!",
     "modal.text.not_found": "Dieses Unternehmen hat keine Meldungen"
   },
   pl: {
