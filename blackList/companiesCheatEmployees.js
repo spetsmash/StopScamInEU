@@ -1,12 +1,12 @@
 export const companiesCheatEmployees = [
     {
-        title: "Title Cusnir",
-        search: ["cusnir", "sdsf", "все слова по которым можно искать"],
+        title: "Cusnir Bau",
+        search: ["cusnir bau", "Cusnir Bau", "CUSNIR BAU", "cusnirbau", "молдавский пидар"],
         taxNumber: "8971881415"
     },
-    {
-        title: "Title Cusnir",
-        search: ["cusnir", "sdsf", "все слова по которым можно искать"],
+    /*{
+        title: "Cusnir Bau",
+        search: ["cusnir", "sdsf", "молдавский пидар"],
         taxNumber: "8971881415"
-    },
+    },*/
 ];
