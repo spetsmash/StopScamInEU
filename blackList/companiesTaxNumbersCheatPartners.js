@@ -1,1 +1,1 @@
-export const companiesTaxNumbersCheatPartners = ["mkbau", "nordbau maranndi", "mk bau"];
+export const companiesTaxNumbersCheatPartners = ["mk bau", "nordbau maranndi", "MK Bau"];
