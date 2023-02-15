@@ -51,7 +51,7 @@ export default {
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Внимание",
     "modal.text.employees": "Компания {{name}} с номером налогоплательщика {{taxNumber}} не платит работникам!",
-    "modal.text.business": "Компания {{name}} с номером налогоплательщика {{taxNumber}}  обманывает бизнесс партнеров!",
+    "modal.text.business": "Компания {{name}} с номером налогоплательщика {{taxNumber}}  обманывает бизнес-партнеров!",
     "modal.text.not_found": "Никаких жалоб на компанию не поступало!"
   },
   de: {
@@ -94,8 +94,8 @@ export default {
     "donate.crypto": "Cryptocurrencies",
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Uwaga",
-    "modal.text.employees": "Firma nie wypłaca pieniędzy pracownikom!",
-    "modal.text.business": "Firma oszukuje partnerów biznesowych!",
+    "modal.text.employees": "Firma {{name}} z numerem podatkowym {{taxNumber}} nie płaci pracownikom!",
+    "modal.text.business": "Firma {{name}} z numerem podatkowym {{taxNumber}} oszukuje partnerów biznesowych!",
     "modal.text.not_found": "Nie zgłoszono żadnych skarg dotyczących wspomnianej firmy"
   },
   ua: {
@@ -118,8 +118,8 @@ export default {
     "donate.crypto": "Криптовалюти",
     "donate.bitcoin": "Bitcoin",
     "modal.title": "Увага",
-    "modal.text.employees": "Фірма не платить робітникам!",
-    "modal.text.business": "Фірма не платить бізнес партнерам!",
+    "modal.text.employees": "Фірма {{name}} з номером платника податку {{taxNumber}} не платить робітникам!",
+    "modal.text.business": "Фірма {{name}} з номером платника податку {{taxNumber}} ошукує бизнес-партнерів!",
     "modal.text.not_found": "Жодних скарг на компанію не надходило!"
   },
 };
