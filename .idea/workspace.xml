@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="8a5ad377-b8a7-4ef0-938c-494467cc9833" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blackList/companiesCheatEmployees.js" beforeDir="false" afterPath="$PROJECT_DIR$/blackList/companiesCheatEmployees.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackList/companiesCheatPartners.js" beforeDir="false" afterPath="$PROJECT_DIR$/blackList/companiesCheatPartners.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +88,8 @@
       <workItem from="1673033597301" duration="987000" />
       <workItem from="1673607055667" duration="2422000" />
       <workItem from="1676480468417" duration="817000" />
+      <workItem from="1679260755287" duration="546000" />
+      <workItem from="1682513465592" duration="1142000" />
     </task>
     <task id="LOCAL-00001" summary="css">
       <created>1671005490527</created>
@@ -215,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676490198160</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="Dobavil &quot;Молдавского пидара&quot;">
+      <created>1676490694170</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1676490694170</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,13 +260,14 @@
     <MESSAGE value="Ispravil perevod" />
     <MESSAGE value="Dobavil &quot;молдавского пидара&quot;" />
     <MESSAGE value="Ispravil nemetskij" />
-    <option name="LAST_COMMIT_MESSAGE" value="Ispravil nemetskij" />
+    <MESSAGE value="Dobavil &quot;Молдавского пидара&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dobavil &quot;Молдавского пидара&quot;" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="425" y="0" key="CommitChangelistDialog2" timestamp="1676490197532">
+    <state x="425" y="0" key="CommitChangelistDialog2" timestamp="1676490693495">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="425" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1676490197532" />
+    <state x="425" y="0" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1676490693495" />
     <state width="1578" height="216" key="GridCell.Tab.0.bottom" timestamp="1672777247464">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -274,9 +284,9 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1578" height="216" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1672777247464" />
-    <state x="392" y="150" key="Vcs.Push.Dialog.v2" timestamp="1676490199978">
+    <state x="392" y="150" key="Vcs.Push.Dialog.v2" timestamp="1676490754922">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="150" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1676490199978" />
+    <state x="392" y="150" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1676490754922" />
   </component>
 </project>
